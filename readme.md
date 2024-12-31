@@ -54,7 +54,7 @@ Contributions are welcome! Please follow these steps to contribute:
     git commit -m 'Add some feature'
     ```
 4. Push to the branch:
-    ```bash
+
     git push origin feature/your-feature-name
     ```
 5. Open a pull request.
