@@ -1,0 +1,281 @@
+
+body{
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+.main{
+  display: flex;
+  height :100vh;
+  
+}
+
+.sidebar{
+  background-color: black;
+  width: 340px;
+  border-radius: 1rem;
+  margin-right: 0.5rem;
+}
+.maincon{
+  background-color: #121212;
+  flex:1;
+  border-radius :1rem;
+  overflow: auto;
+  padding: 0 1.5rem 0 1.5rem ;
+}
+.musicplayer{
+  background-color: black;
+  bottom:0px;
+  position:fixed;
+  width: 100%;
+  height: 72px;
+}
+.navi{
+  background-color: #121212;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100px;
+  padding: 0.5rem 0.75rem;
+  
+}
+
+.nav_opt{
+  line-height: 2.5rem;
+  opacity: 0.75;
+}
+.nav_opt:hover{
+  
+  opacity: 1;
+}
+
+.nav_opt i{
+  font-size:  1.25rem;
+  padding-right: 1rem;
+}
+.nav_opt a{
+  font-size: 1rem;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+.lib{
+  background-color: #121212;
+  border-radius: 1rem;
+  height: 100%;
+  margin-top: 0.6rem;
+  padding: 0.5rem 0.75rem;
+}
+.options{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lipopt img{
+  height: 1.25rem;
+  width: 1.25rem;
+  margin-right: 1rem;
+}
+.icons{
+  font-size: 1.3rem;
+  display: flex;
+
+}
+.icons i{
+  opacity: 0.7;
+  margin-right: 1rem;
+
+}
+.icons i:hover{
+  opacity: 1;}
+
+.libbox{
+  height: 8rem;
+  background-color: #232323;
+  border-radius: 0.86rem;
+  margin: 0.75rem 0rem 1.7rem 0;
+  padding: 0.75rem 1rem;
+}
+.boxp1{
+  font-size: 1rem;
+  font-weight: 500;
+}
+.boxp2{
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+.badge{
+  background-color: white;
+  border: none;
+  padding: 0.25rem 1rem;
+  border-radius: 100px;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  height:2rem;
+  width: fit-content;
+}
+
+.sticyna{
+  position: sticky;
+  background-color: #121212;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0 1rem 0;
+  z-index: 2
+
+}
+.left{
+  margin-left: 0.5rem;
+}
+.rig{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.naviw{
+  margin-right: 1rem;
+}
+.darkbadge{
+  background-color: #000;
+  color: white;
+}
+
+@media (max-width:1000px) {
+  .hide{
+    display: none;
+  }
+  
+}
+
+.card{
+  background-color: #232323;
+  width: 150px;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-left: 1.5rem;
+  margin-top: 1.5rem;
+}
+.containercard{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.cardimg{
+  width: 100%;
+  border-radius: 0.5rem;
+
+}
+.cardtitle{
+  font-weight: 600;
+}
+.cardinfo{
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.footer{
+  height: 250px;
+}
+.lines{
+  width: 90%;
+  height: 30%;
+  border-bottom: 1px solid white;
+  opacity: 0.4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.musicplayer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.album{
+  width: 25%;
+}
+.player{
+  width: 50%;
+}
+.control{
+  width: 25%;
+}
+.pc1{
+  height: 1rem;
+  margin-right: 1.75rem;
+  opacity: 0.7;
+}
+.playercont{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pc1:hover{
+  opacity: 1;
+}
+.progress{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prog{
+  appearance: none;
+  width: 70%;
+  background-color: transparent;
+  cursor: pointer;
+}
+.prog::-webkit-slider-runnable-track{
+  background-color: #ddd;
+  border-radius: 100px;
+  height: 0.2rem;
+}
+.prog::-webkit-slider-thumb{
+  appearance: none;
+  height: 1 rem;
+  width: 1 rem;
+ background-color: #1bd760;
+ border-radius: 50%;
+}
+.album{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.songdit{
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.75rem;
+}
+.album img{
+  border-radius: 4px;
+  margin-right: 0.75rem;
+}
+.vol{
+  width: 40%;
+}
+.control{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vol::-webkit-slider-runnable-track{
+  height: 0.25rem;
+  background-color: #ddd;
+  border-radius: 100px;
+  cursor: pointer;
+}
+.vol::-webkit-slider-thumb{
+  appearance: none;
+  display: none;
+}
+.control i{
+  margin-right: 0.75rem;
+}
